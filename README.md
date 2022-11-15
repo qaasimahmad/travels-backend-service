@@ -1,1 +1,2 @@
-# travels-backend-service
+# geo-travel-api
+Core backend for the geotravel app

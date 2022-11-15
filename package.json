@@ -1,0 +1,69 @@
+{
+  "name": "geotravel-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha 'test/**/*.js' --timeout 10000",
+    "start": "node server.js -p $PORT",
+    "dev": "nodemon server.js",
+    "postinstall": "husky install",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.75",
+    "@sentry/node": "^6.19.7",
+    "@sentry/tracing": "^6.19.7",
+    "amadeus": "^5.7.1",
+    "aws-sdk": "^2.1140.0",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "bull": "^4.8.3",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "eslint": "^8.18.0",
+    "eslint-plugin-chai-expect": "^3.0.0",
+    "eslint-plugin-mocha": "^10.0.5",
+    "eslint-plugin-varspacing": "^1.2.2",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "google-auth-library": "^8.0.2",
+    "husky": "^8.0.1",
+    "ioredis": "^5.0.5",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "ladash": "^1.2.0",
+    "lodash": "^4.17.21",
+    "mailgun-js": "^0.22.0",
+    "mocha": "^10.0.0",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.1",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "node-cron": "^3.0.1",
+    "nodemailer": "^6.7.5",
+    "nodemon": "^2.0.16",
+    "randomstring": "^1.2.2",
+    "redis-url-parse": "^2.0.0",
+    "throng": "^5.0.0",
+    "winston": "^3.7.2"
+  },
+  "lint-staged": {
+    "*.{json}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
