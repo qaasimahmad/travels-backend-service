@@ -1,2 +1,3 @@
-# geo-travel-api
+# Travel-api
+
 Core backend for the travel app
